@@ -1,0 +1,16 @@
+D:\Desktop\testepretico\Webcad_estabelecimentos\Webcad_estabelecimentos\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\Desktop\testepretico\Webcad_estabelecimentos\Webcad_estabelecimentos\bin\Debug\netcoreapp2.1\appsettings.json
+D:\Desktop\testepretico\Webcad_estabelecimentos\Webcad_estabelecimentos\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\Desktop\testepretico\Webcad_estabelecimentos\Webcad_estabelecimentos\bin\Debug\netcoreapp2.1\Webcad_estabelecimentos.deps.json
+D:\Desktop\testepretico\Webcad_estabelecimentos\Webcad_estabelecimentos\bin\Debug\netcoreapp2.1\Webcad_estabelecimentos.runtimeconfig.json
+D:\Desktop\testepretico\Webcad_estabelecimentos\Webcad_estabelecimentos\bin\Debug\netcoreapp2.1\Webcad_estabelecimentos.runtimeconfig.dev.json
+D:\Desktop\testepretico\Webcad_estabelecimentos\Webcad_estabelecimentos\bin\Debug\netcoreapp2.1\Webcad_estabelecimentos.dll
+D:\Desktop\testepretico\Webcad_estabelecimentos\Webcad_estabelecimentos\obj\Debug\netcoreapp2.1\Webcad_estabelecimentos.csprojAssemblyReference.cache
+D:\Desktop\testepretico\Webcad_estabelecimentos\Webcad_estabelecimentos\obj\Debug\netcoreapp2.1\Webcad_estabelecimentos.RazorAssemblyInfo.cache
+D:\Desktop\testepretico\Webcad_estabelecimentos\Webcad_estabelecimentos\obj\Debug\netcoreapp2.1\Webcad_estabelecimentos.RazorAssemblyInfo.cs
+D:\Desktop\testepretico\Webcad_estabelecimentos\Webcad_estabelecimentos\obj\Debug\netcoreapp2.1\Webcad_estabelecimentos.AssemblyInfoInputs.cache
+D:\Desktop\testepretico\Webcad_estabelecimentos\Webcad_estabelecimentos\obj\Debug\netcoreapp2.1\Webcad_estabelecimentos.AssemblyInfo.cs
+D:\Desktop\testepretico\Webcad_estabelecimentos\Webcad_estabelecimentos\obj\Debug\netcoreapp2.1\Webcad_estabelecimentos.RazorTargetAssemblyInfo.cache
+D:\Desktop\testepretico\Webcad_estabelecimentos\Webcad_estabelecimentos\bin\Debug\netcoreapp2.1\Webcad_estabelecimentos.pdb
+D:\Desktop\testepretico\Webcad_estabelecimentos\Webcad_estabelecimentos\obj\Debug\netcoreapp2.1\Webcad_estabelecimentos.dll
+D:\Desktop\testepretico\Webcad_estabelecimentos\Webcad_estabelecimentos\obj\Debug\netcoreapp2.1\Webcad_estabelecimentos.pdb
