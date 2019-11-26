@@ -7,7 +7,6 @@
 
 <h1>Adicionar estabelecimentos</h1>
 
-
 <hr />
 <div class="row">
     <div class="col-md-10 offset-md-1">
@@ -126,7 +125,7 @@
                 </div>
                 <div class="form-group col-md-3">
                     <label asp-for="Agencia" class="control-label"></label>
-                    <input asp-for="Agencia" class="form-control" />
+                    <input asp-for="Agencia" class="form-control"name="agencia" />
                     <span asp-validation-for="Agencia" class="text-danger"></span>
                 </div>
                 <div class="form-group col-md-3">
@@ -138,7 +137,7 @@
         </form>
         <div class="form-group justify-content-between d-flex">
             <a class="btn btn-primary" asp-action="Index">Voltar</a>
-            <button type="submit" value="Adicionar" class="btn btn-success">Adicionar</button>
+            <button type="button" onclick="cadastrar()" value="Cadastrar" class="btn btn-success">Cadastrar</button>
         </div>
     </div>
 </div>

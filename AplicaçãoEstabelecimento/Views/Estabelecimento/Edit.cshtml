@@ -16,7 +16,7 @@
             <div class="form-row">
                 <div class="form-group col-md-1">
                     <label asp-for="Id" class="control-label"></label>
-                    <input asp-for="Id" class="form-control" />
+                    <input asp-for="Id" readonly class="form-control" />
                     <span asp-validation-for="Id" class="text-danger"></span>
                 </div>
                 <div class="form-group col-md-2">
@@ -43,7 +43,7 @@
                 </div>
                 <div class="form-group col-md-2">
                     <label asp-for="Data_Cadastro" class="control-label"></label>
-                    <input asp-for="Data_Cadastro" class="form-control" />
+                    <input asp-for="Data_Cadastro" readonly class="form-control" />
                     <span asp-validation-for="Data_Cadastro" class="text-danger"></span>
                 </div>
             </div>
@@ -137,7 +137,7 @@
                         <option value="TO">TO</option>
                     </select>
                 </div>
-            </div>f
+            </div>
             <div class="form-row">
                 <div class="form-group col-md-3">
                     <label asp-for="Banco" class="control-label"></label>
@@ -167,7 +167,7 @@
 
 @section Scripts {
     <script>
-        var id = $("#Id").val();// window.location.pathname.split("/")[3];
+        var id = $("#Id").val();
         retorno(id);
     </script>
 }

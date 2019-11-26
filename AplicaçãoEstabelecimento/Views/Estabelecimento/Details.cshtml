@@ -5,130 +5,110 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Details</h2>
+<h1>Detalhes Estabelecimento</h1>
+<hr />
+<form asp-action="Details">
+    <div class="form-row">
+        <div class="form-group col-md-1">
+            <label class="font-weight-bold">@Html.DisplayNameFor(model => model.Id)</label>
+            <p name="Id">@Html.DisplayFor(model => model.Id)</p>
+        </div>
+        <div class="form-group col-md-2">
+            <label class="font-weight-bold">@Html.DisplayNameFor(model => model.Status)</label>
+            <p name="Status">@Html.DisplayFor(model => model.Status)</p>
+        </div>
+        <div class="form-group col-md-3">
+            <label class="font-weight-bold">@Html.DisplayNameFor(model => model.Categoria)</label>
+            <p name="Categoria">@Html.DisplayFor(model => model.Categoria)</p>
+        </div>
+        <div class="form-group col-md-2">
+            <label class="font-weight-bold">@Html.DisplayNameFor(model => model.Data_Cadastro)</label>
+            <p name="Data_Cadastro">@Html.DisplayFor(model => model.Data_Cadastro)</p>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label class="font-weight-bold">@Html.DisplayNameFor(model => model.Razao_Social)</label>
+            <p name="Razao_Social">@Html.DisplayFor(model => model.Razao_Social)</p>
+        </div>
+        <div class="form-group col-md-6">
+            <label class="font-weight-bold">@Html.DisplayNameFor(model => model.Nome_Fantasia)</label>
+            <p name="Nome_Fantasia">@Html.DisplayFor(model => model.Nome_Fantasia)</p>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            <label class="font-weight-bold">@Html.DisplayNameFor(model => model.Cnpj)</label>
+            <p name="Cnpj">@Html.DisplayFor(model => model.Cnpj)</p>
+        </div>
+        <div class="form-group col-md-3">
+            <label class="font-weight-bold">@Html.DisplayNameFor(model => model.Telefone)</label>
+            <p name="Telefone"> @Html.DisplayFor(model => model.Telefone)</p>
+        </div>
+        <div class="form-group col-md-6">
+            <label class="font-weight-bold">@Html.DisplayNameFor(model => model.Email)</label>
+            <p name="Email"> @Html.DisplayFor(model => model.Email)</p>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-2">
+            <label class="font-weight-bold">@Html.DisplayNameFor(model => model.Cep)</label>
+            <p name="Cep">@Html.DisplayFor(model => model.Cep)</p>
+        </div>
+        <div class="form-group col-md-8">
+            <label class="font-weight-bold">@Html.DisplayNameFor(model => model.Logradouro)</label>
+            <p name="Logradouro"> @Html.DisplayFor(model => model.Logradouro)</p>
+        </div>
+        <div class="form-group col-md-2">
+            <label class="font-weight-bold">@Html.DisplayNameFor(model => model.Numero)</label>
+            <p name="Numero">@Html.DisplayFor(model => model.Numero)</p>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-5">
+            <label class="font-weight-bold">@Html.DisplayNameFor(model => model.Bairro)</label>
+            <p name="Bairro">@Html.DisplayFor(model => model.Bairro)</p>
+        </div>
+        <div class="form-group col-md-5">
+            <label class="font-weight-bold">@Html.DisplayNameFor(model => model.Cidade)</label>
+            <p name="Cidade">@Html.DisplayFor(model => model.Cidade)</p>
+        </div>
+        <div class="form-group col-md-2">
+            <label class="font-weight-bold">@Html.DisplayNameFor(model => model.UF)</label>
+            <p name="UF">@Html.DisplayFor(model => model.UF)</p>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            <label class="font-weight-bold">@Html.DisplayNameFor(model => model.Banco)</label>
+           <p name="Banco">@Html.DisplayFor(model => model.Banco)</p>
+        </div>
+        <div class="form-group col-md-3">
+            <label class="font-weight-bold">@Html.DisplayNameFor(model => model.Agencia)</label>
+           <p name="Agencia">@Html.DisplayFor(model => model.Agencia)</p>
+        </div>
+        <div class="form-group col-md-3">
+            <label class="font-weight-bold">@Html.DisplayNameFor(model => model.Conta)</label>
+            <p name="Conta">@Html.DisplayFor(model => model.Conta)</p>
+        </div>
+    </div>
+</form>
+<div class="form-group justify-content-between d-flex">
+    <a class="btn btn-primary" asp-action="Index">Voltar</a>
+    <a class="btn btn-success" href="#" onclick="call_atualizar()">Atualizar</a>
+</div>
 
-<div>
-    <h4>EstabelecimentoModel</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Id)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Id)
-        </dd>
-       
-        <dt>
-            @Html.DisplayNameFor(model => model.Status)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Status)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Data_Cadastro)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Data_Cadastro)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Id_Categoria)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Id_Categoria)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Categoria)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Categoria)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Razao_Social)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Razao_Social)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Nome_Fantasia)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Nome_Fantasia)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Cnpj)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Cnpj)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Telefone)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Telefone)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Cep)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Cep)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Logradouro)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Logradouro)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Numero)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Numero)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Bairro)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Bairro)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Cidade)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Cidade)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.UF)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.UF)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Banco)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Banco)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Agencia)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Agencia)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Conta)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Conta)
-        </dd>
-    </dl>
-</div>
-<div>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    <a asp-action="Index">Back to List</a>
-</div>
+
+@section Scripts {
+    <script>
+        var id = window.location.pathname.split("/")[3];
+        var host = window.location.origin;
+
+        retorno_details(id);
+
+        function call_atualizar() {
+            window.location.assign(host + "/Estabelecimento/Edit/" + id);
+        }
+
+    </script>
+}
