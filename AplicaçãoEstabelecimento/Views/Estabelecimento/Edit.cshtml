@@ -1,0 +1,173 @@
+﻿@model AplicaçãoEstabelecimento.Models.EstabelecimentoModel
+
+@{
+    ViewData["Title"] = "FITCARD | Atualizar Estabelecimento";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1>Atualizar Estabelecimento</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-10 offset-md-1">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-row">
+                <div class="form-group col-md-1">
+                    <label asp-for="Id" class="control-label"></label>
+                    <input asp-for="Id" class="form-control" />
+                    <span asp-validation-for="Id" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-2">
+                    <label asp-for="Status" class="control-label"></label>
+                    <select asp-for="Status" class="form-control">
+                        <option value="">Selecione ...</option>
+                        <option value="0">Inativo</option>
+                        <option value="1">Ativo</option>
+
+                    </select>
+                    <span asp-validation-for="Status" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-3">
+                    <label asp-for="Categoria" class="control-label"></label>
+                    <select asp-for="Categoria" class="form-control">
+                        <option value="">Selecione ...</option>
+                        <option value="1">Supermercado</option>
+                        <option value="2">Restaurante</option>
+                        <option value="3">Borracharia</option>
+                        <option value="5">Oficina</option>
+                        <option value="4">Posto</option>
+                    </select>
+                    <span asp-validation-for="Categoria" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-2">
+                    <label asp-for="Data_Cadastro" class="control-label"></label>
+                    <input asp-for="Data_Cadastro" class="form-control" />
+                    <span asp-validation-for="Data_Cadastro" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label asp-for="Razao_Social" class="control-label"></label>
+                    <input asp-for="Razao_Social" class="form-control" />
+                    <span asp-validation-for="Razao_Social" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="Nome_Fantasia" class="control-label"></label>
+                    <input asp-for="Nome_Fantasia" class="form-control" />
+                    <span asp-validation-for="Nome_Fantasia" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label asp-for="Cnpj" class="control-label"></label>
+                    <input asp-for="Cnpj" class="form-control" />
+                    <span asp-validation-for="Cnpj" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-3">
+                    <label asp-for="Telefone" class="control-label"></label>
+                    <input asp-for="Telefone" class="form-control" />
+                    <span asp-validation-for="Telefone" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-2">
+                    <label asp-for="Cep" class="control-label"></label>
+                    <input asp-for="Cep" class="form-control" />
+                    <span asp-validation-for="Cep" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-8">
+                    <label asp-for="Logradouro" class="control-label"></label>
+                    <input asp-for="Logradouro" class="form-control" />
+                    <span asp-validation-for="Logradouro" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-2">
+                    <label asp-for="Numero" class="control-label"></label>
+                    <input asp-for="Numero" class="form-control" />
+                    <span asp-validation-for="Numero" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label asp-for="Bairro" class="control-label"></label>
+                    <input asp-for="Bairro" class="form-control" />
+                    <span asp-validation-for="Bairro" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-5">
+                    <label asp-for="Cidade" class="control-label"></label>
+                    <input asp-for="Cidade" class="form-control" />
+                    <span asp-validation-for="Cidade" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-2">
+                    <label asp-for="UF" class="control-label"></label>
+                    <select asp-for="UF" class="form-control">
+                        <option value="">Selecione...</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AM">AM</option>
+                        <option value="AP">AP</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MG">MG</option>
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="PR">PR</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="RS">RS</option>
+                        <option value="SC">SC</option>
+                        <option value="SE">SE</option>
+                        <option value="SP">SP</option>
+                        <option value="TO">TO</option>
+                    </select>
+                </div>
+            </div>f
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label asp-for="Banco" class="control-label"></label>
+                    <input asp-for="Banco" class="form-control" />
+                    <span asp-validation-for="Banco" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-3">
+                    <label asp-for="Agencia" class="control-label"></label>
+                    <input asp-for="Agencia" class="form-control" />
+                    <span asp-validation-for="Agencia" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-3">
+                    <label asp-for="Conta" class="control-label"></label>
+                    <input asp-for="Conta" class="form-control" />
+                    <span asp-validation-for="Conta" class="text-danger"></span>
+                </div>
+            </div>
+        </form>
+        <div class="form-group justify-content-between d-flex">
+            <a class="btn btn-primary" asp-action="Index">Voltar</a>
+            <button type="button" onclick="atualizar()" value="Atualizar" class="btn btn-success">Atualizar</button>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    <script>
+        var id = $("#Id").val();// window.location.pathname.split("/")[3];
+        retorno(id);
+    </script>
+}

@@ -12583,11 +12583,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desktop\\testepretico\\Webcad_estabelecimentos\\Webcad_estabelecimentos\\Webcad_estabelecimentos.csproj",
+      "projectUniqueName": "C:\\testepratico\\Webcad_estabelecimentos\\Webcad_estabelecimentos.csproj",
       "projectName": "Webcad_estabelecimentos",
-      "projectPath": "D:\\Desktop\\testepretico\\Webcad_estabelecimentos\\Webcad_estabelecimentos\\Webcad_estabelecimentos.csproj",
+      "projectPath": "C:\\testepratico\\Webcad_estabelecimentos\\Webcad_estabelecimentos.csproj",
       "packagesPath": "C:\\Users\\Jacqueline\\.nuget\\packages\\",
-      "outputPath": "D:\\Desktop\\testepretico\\Webcad_estabelecimentos\\Webcad_estabelecimentos\\obj\\",
+      "outputPath": "C:\\testepratico\\Webcad_estabelecimentos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

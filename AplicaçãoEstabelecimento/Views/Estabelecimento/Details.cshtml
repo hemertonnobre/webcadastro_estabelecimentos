@@ -1,0 +1,134 @@
+﻿@model AplicaçãoEstabelecimento.Models.EstabelecimentoModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EstabelecimentoModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+       
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Data_Cadastro)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Data_Cadastro)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Id_Categoria)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Id_Categoria)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Categoria)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Categoria)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Razao_Social)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Razao_Social)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome_Fantasia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nome_Fantasia)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cnpj)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cnpj)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Telefone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cep)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cep)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Logradouro)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Logradouro)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Numero)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Bairro)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Bairro)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cidade)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cidade)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UF)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UF)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Banco)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Banco)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Agencia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Agencia)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Conta)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Conta)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "Estabelecimento";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Estabelecimentos </h1>
+<div class="row">
+    <div class="col">
+        <table id="estabelecimento" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Data Cadastro</th>
+                    <th>Status</th>
+                    <th>Razao Social </th>
+                    <th>Nome Fantasia</th>
+                    <th>Categoria</th>
+                    <th>CNPJ</th>
+                    <th>Cidade</th>
+                    <th>UF</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+@section scripts {
+    <script>
+        listagem();
+    </script>
+}

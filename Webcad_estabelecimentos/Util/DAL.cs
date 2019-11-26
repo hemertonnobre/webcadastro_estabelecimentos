@@ -15,7 +15,7 @@ namespace Webcad_estabelecimentos.Util
 		private static string Password = "";
 		private MySqlConnection Connection;
 
-		private string ConnectionString =$"Server={Server};Database={Database};Uid={User};Pwd={Password};Sslmode=none ";
+		private string ConnectionString =$"Server={Server};Database={Database};Uid={User};Pwd={Password};Sslmode=none;charset=utf8;";
 
 		public DAL() { 
 			Connection =new MySqlConnection(ConnectionString);
@@ -37,7 +37,7 @@ namespace Webcad_estabelecimentos.Util
 			MySqlDataAdapter DataAdaptar = new MySqlDataAdapter(Command);
 			DataTable Dados = new DataTable();
 			DataAdaptar.Fill(Dados);
-			return Dados;
+            return Dados;
 
 		}
 
