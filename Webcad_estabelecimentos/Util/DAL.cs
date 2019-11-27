@@ -9,13 +9,13 @@ namespace Webcad_estabelecimentos.Util
 {
 	public class DAL
 	{
-		private static string Server = "localhost";
+		private static string Server = "nobrehnlservicesmysql.mysql.database.azure.com";
 		private static string Database = "dbcadastro";
-		private static string User = "root";
-		private static string Password = "";
+		private static string User = "hemerton@nobrehnlservicesmysql";
+		private static string Password = "Hjvl86951320";
 		private MySqlConnection Connection;
 
-		private string ConnectionString =$"Server={Server};Database={Database};Uid={User};Pwd={Password};Sslmode=none;charset=utf8;";
+		private string ConnectionString =$"Server={Server};Database={Database};Uid={User};Pwd={Password};Sslmode=Required;charset=utf8;";
 
 		public DAL() { 
 			Connection =new MySqlConnection(ConnectionString);

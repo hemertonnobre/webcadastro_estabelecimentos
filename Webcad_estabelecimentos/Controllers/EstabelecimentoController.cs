@@ -103,9 +103,20 @@ namespace Webcad_estabelecimentos.Controllers
         // excluir
         [HttpDelete]
         [Route("Excluir/{id}")]
-        public void Excluir(int id)
+        public ReturnAllServices Excluir(int id)
         {
-            new EstabelecimentoModel().Excluir(id);
+            ReturnAllServices retorno = new ReturnAllServices();
+            try
+            {
+                new EstabelecimentoModel().Excluir(id);
+            }
+            catch (Exception ex)
+            {
+                retorno.Result = false;
+                retorno.ErrorMessege = "Erro ao tentar excluir o Estabelecimento: " + ex.Message;
+            }
+
+            return retorno;  
         }
     } 
  }

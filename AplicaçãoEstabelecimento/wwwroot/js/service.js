@@ -1,32 +1,23 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
-
-
-
-
-
-/*
-    $.ajax({
-        url: "https://localhost:4265/api/Cadastro/listagem",
-        //data: { dados: estabelecimento },
-        type: "get",
-        dataType: "json",
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            $("#resultado").empty();
-            $("#resultado").append("erro");
-        },
-        success: function (data, textStatus, XMLHttpRequest) {
-            $("#resultado").empty();
-            $(data).each(function () {
-                $("table#resultado tbody").append("<tr><td>" + this.Nome + "</td><td>" + this.Sobrenome + " </td><td>" + this.Sobrenome + " </td><td>" + this.Nome + "</td><td>" + this.Sobrenome + " </td><td>" + this.Sobrenome + " </td></tr>");
-            });
-        }
-    });*/
-
+﻿
 
 var URL_API = "https://localhost:44353/api/";
+
+function create_masked() {
+    $("#Agencia").mask("000-0");  
+    $("#Conta").mask("00.000-0");
+    $("#Cep").mask("00.000-000", { selectOnFocus: true });
+    $("#Cnpj").mask("00.000.000/0000-00");
+    var SPMaskBehavior = function (val) {
+        return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+    },
+        spOptions = {
+            onKeyPress: function (val, e, field, options) {
+                field.mask(SPMaskBehavior.apply({}, arguments), options);
+            }
+        };
+
+    $('#Telefone').mask(SPMaskBehavior, spOptions);
+}
 
 function listagem() {
     $.ajax({
@@ -164,6 +155,7 @@ function atualizar() {
 }
 
 function cadastrar() {
+       
     var estabelecimento = {
         "Id_Status": 1,
         "Status":"Ativo",
@@ -197,6 +189,7 @@ function cadastrar() {
         },
         success: function (data, textStatus, XMLHttpRequest) {
             alertify.success('Etabelecimento cadastrado com sucesso!');
+            $('form')[0].reset();
         }
     });
 }
@@ -213,6 +206,8 @@ function deletar(id) {
         },
         success: function (data, textStatus, XMLHttpRequest) {
             alertify.success('Etabelecimento excluido com sucesso!');
+            $("#estabelecimento tbody").html("");
+            listagem();
         }
     });
-}s
+}

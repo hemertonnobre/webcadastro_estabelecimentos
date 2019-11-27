@@ -10,6 +10,20 @@
     {
       "library": "font-awesome@5.11.2",
       "destination": "wwwroot/lib/font-awesome/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "alertifyjs@1.12.0",
+      "destination": "wwwroot/lib/bootstrap/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "jquery-mask-plugin@1.14.16",
+      "destination": "wwwroot/lib/jquery-mask-plugin/",
+      "files": [
+        "dist/jquery.mask.js",
+        "dist/jquery.mask.min.js"
+      ]
     }
   ]
 }

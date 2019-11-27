@@ -24,7 +24,7 @@
                         <option value="4">Posto</option>
                     </select>
                     <span asp-validation-for="Categoria" class="text-danger"></span>
-                </div>                
+                </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
@@ -125,7 +125,7 @@
                 </div>
                 <div class="form-group col-md-3">
                     <label asp-for="Agencia" class="control-label"></label>
-                    <input asp-for="Agencia" class="form-control"name="agencia" />
+                    <input asp-for="Agencia" class="form-control" name="agencia" />
                     <span asp-validation-for="Agencia" class="text-danger"></span>
                 </div>
                 <div class="form-group col-md-3">
@@ -141,5 +141,9 @@
         </div>
     </div>
 </div>
-    
+@section Scripts {
+    <script>
+        create_masked();
+    </script>
+}
 
