@@ -5,7 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AplicaçãoEstabelecimento.Models
+namespace AplicacaoEstabelecimento.Models
 {
     public class EstabelecimentoModel
     {

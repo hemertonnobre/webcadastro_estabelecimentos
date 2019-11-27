@@ -29,4 +29,3 @@ C:\testepratico\Webcad_estabelecimentos\obj\Debug\netcoreapp2.1\Webcad_estabelec
 C:\testepratico\Webcad_estabelecimentos\obj\Debug\netcoreapp2.1\Webcad_estabelecimentos.RazorTargetAssemblyInfo.cache
 C:\testepratico\Webcad_estabelecimentos\obj\Debug\netcoreapp2.1\Webcad_estabelecimentos.dll
 C:\testepratico\Webcad_estabelecimentos\obj\Debug\netcoreapp2.1\Webcad_estabelecimentos.pdb
-C:\testepratico\Webcad_estabelecimentos\obj\Debug\netcoreapp2.1\Webcad_estabelecimentos.csprojAssemblyReference.cache

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace AplicaçãoEstabelecimento
+namespace AplicacaoEstabelecimento
 {
     public class Program
     {

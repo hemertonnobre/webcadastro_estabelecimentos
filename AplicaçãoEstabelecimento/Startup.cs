@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace AplicaçãoEstabelecimento
+namespace AplicacaoEstabelecimento
 {
     public class Startup
     {
@@ -44,7 +44,7 @@ namespace AplicaçãoEstabelecimento
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Estabelecimento/Error");
                 app.UseHsts();
             }
 
@@ -56,7 +56,7 @@ namespace AplicaçãoEstabelecimento
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Estabelecimento}/{action=Index}/{id?}");
             });
         }
     }

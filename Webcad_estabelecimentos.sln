@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Webcad_estabelecimentos", "Webcad_estabelecimentos\Webcad_estabelecimentos.csproj", "{082B0B13-1241-4587-B36D-48301B642F4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AplicaçãoEstabelecimento", "AplicaçãoEstabelecimento\AplicaçãoEstabelecimento.csproj", "{2D81C054-9D40-45E7-A285-63703BBC8F8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AplicacaoEstabelecimento", "AplicaçãoEstabelecimento\AplicacaoEstabelecimento.csproj", "{2D81C054-9D40-45E7-A285-63703BBC8F8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
